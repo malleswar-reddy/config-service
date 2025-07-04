@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: paymentservice
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/payment_db
+    username: ecommerce
+    password: Kr12@984872
+    pool:
+      max-size: 20
+      initial-size: 5
+      validation-query: SELECT 1
+    connection-factory:
+      type: io.r2dbc.spi.ConnectionFactory
+
+server:
+  port: 8080
