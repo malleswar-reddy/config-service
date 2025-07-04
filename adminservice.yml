@@ -2,7 +2,7 @@ spring:
   application:
     name: adminservice
   r2dbc:
-    url: r2dbc:postgresql://postgres:5432/seller_db
+    url: r2dbc:postgresql://localhost:5432/seller_db
     username: postgres
     password: Kr12@984872
     pool:
